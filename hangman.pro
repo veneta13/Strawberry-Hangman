@@ -33,38 +33,52 @@ win_func(init):-
 	button(class(z_func), text("Z"), pos(490,400), size(35,35)).
 
 
-a_func(press) :- add_text(G_TEXT_BOX, "a").
-b_func(press) :- add_text(G_TEXT_BOX, "b").
-c_func(press) :- add_text(G_TEXT_BOX, "c").
-d_func(press) :- add_text(G_TEXT_BOX, "d").
-e_func(press) :- add_text(G_TEXT_BOX, "e").
-f_func(press) :- add_text(G_TEXT_BOX, "f").
-g_func(press) :- add_text(G_TEXT_BOX, "g").
-h_func(press) :- add_text(G_TEXT_BOX, "h").
-i_func(press) :- add_text(G_TEXT_BOX, "i").
-j_func(press) :- add_text(G_TEXT_BOX, "j").
-k_func(press) :- add_text(G_TEXT_BOX, "k").
-l_func(press) :- add_text(G_TEXT_BOX, "l").
-m_func(press) :- add_text(G_TEXT_BOX, "m").
-n_func(press) :- add_text(G_TEXT_BOX, "n").
-o_func(press) :- add_text(G_TEXT_BOX, "o").
-p_func(press) :- add_text(G_TEXT_BOX, "p").
-q_func(press) :- add_text(G_TEXT_BOX, "q").
-r_func(press) :- add_text(G_TEXT_BOX, "r").
-s_func(press) :- add_text(G_TEXT_BOX, "s").
-t_func(press) :- add_text(G_TEXT_BOX, "t").
-u_func(press) :- add_text(G_TEXT_BOX, "u").
-v_func(press) :- add_text(G_TEXT_BOX, "v").
-w_func(press) :- add_text(G_TEXT_BOX, "w").
-x_func(press) :- add_text(G_TEXT_BOX, "x").
-y_func(press) :- add_text(G_TEXT_BOX, "y").
-z_func(press) :- add_text(G_TEXT_BOX, "z").
+a_func(press) :- add_text(G_TEXT_BOX, "A").
+b_func(press) :- add_text(G_TEXT_BOX, "B").
+c_func(press) :- add_text(G_TEXT_BOX, "C").
+d_func(press) :- add_text(G_TEXT_BOX, "D").
+e_func(press) :- add_text(G_TEXT_BOX, "E").
+f_func(press) :- add_text(G_TEXT_BOX, "F").
+g_func(press) :- add_text(G_TEXT_BOX, "G").
+h_func(press) :- add_text(G_TEXT_BOX, "H").
+i_func(press) :- add_text(G_TEXT_BOX, "I").
+j_func(press) :- add_text(G_TEXT_BOX, "J").
+k_func(press) :- add_text(G_TEXT_BOX, "K").
+l_func(press) :- add_text(G_TEXT_BOX, "L").
+m_func(press) :- add_text(G_TEXT_BOX, "M").
+n_func(press) :- add_text(G_TEXT_BOX, "N").
+o_func(press) :- add_text(G_TEXT_BOX, "O").
+p_func(press) :- add_text(G_TEXT_BOX, "P").
+q_func(press) :- add_text(G_TEXT_BOX, "Q").
+r_func(press) :- add_text(G_TEXT_BOX, "R").
+s_func(press) :- add_text(G_TEXT_BOX, "S").
+t_func(press) :- add_text(G_TEXT_BOX, "T").
+u_func(press) :- add_text(G_TEXT_BOX, "U").
+v_func(press) :- add_text(G_TEXT_BOX, "V").
+w_func(press) :- add_text(G_TEXT_BOX, "W").
+x_func(press) :- add_text(G_TEXT_BOX, "X").
+y_func(press) :- add_text(G_TEXT_BOX, "Y").
+z_func(press) :- add_text(G_TEXT_BOX, "Z").
 
 
 win_func(paint) :- 
-	pen(3, rgb(0, 0, 0)),       % platform color
-     line(100, 250, 100, 50),    % pole
-	line(70, 250, 130, 250),    % platform base
-	line(100, 50, 180, 50),     % platform top
-	pen(3, rgb(207, 180, 105)), % rope color
-	line(180, 50, 180, 70).     % rope     
+	pen(3, rgb(0, 0, 0)),                    % platform color
+	line(100, 250, 100, 50),                 % pole
+	line(70, 250, 130, 250),                 % platform base
+	line(100, 50, 180, 50),                  % platform top
+	pen(3, rgb(207, 180, 105)),              % rope color
+	line(180, 50, 180, 70),                  % rope
+	pen(2, rgb(232, 190, 172)),              % head color
+	brush(rgb(232, 190, 172)),               % head color
+	round_rect(150, 70, 210, 130, 100, 100), % head
+	pen(2, rgb(17, 145, 6)),                 % hat color
+	brush(rgb(17, 145, 6)),                  % hat color
+	line(150, 80, 210, 80),                  % hat trim
+	rect(160, 60, 200, 80),                  % hat
+	pen(2, rgb(17, 145, 6)),                 % blouse color
+	line(180, 130, 180, 180),                % blouse
+	line(180, 140, 200, 160),                % right arm
+	line(180, 140, 160, 160),                % left arm
+	pen(2, rgb(245, 66, 93)),                % pants color
+	line(180, 180, 190, 230),                % rigth leg
+	line(180, 180, 170, 230).                % left leg
