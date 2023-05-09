@@ -58,4 +58,13 @@ v_func(press) :- add_text(G_TEXT_BOX, "v").
 w_func(press) :- add_text(G_TEXT_BOX, "w").
 x_func(press) :- add_text(G_TEXT_BOX, "x").
 y_func(press) :- add_text(G_TEXT_BOX, "y").
-z_func(press) :- add_text(G_TEXT_BOX, "z").               
+z_func(press) :- add_text(G_TEXT_BOX, "z").
+
+
+win_func(paint) :- 
+	pen(3, rgb(0, 0, 0)),       % platform color
+     line(100, 250, 100, 50),    % pole
+	line(70, 250, 130, 250),    % platform base
+	line(100, 50, 180, 50),     % platform top
+	pen(3, rgb(207, 180, 105)), % rope color
+	line(180, 50, 180, 70).     % rope     
